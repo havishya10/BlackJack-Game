@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journal - Blackjack Game Enhancement</title>
+    <link rel="stylesheet" href="blog-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Learning Journal</h1>
+        <p class="subtitle">Enhancing My Blackjack Game with Multimedia and Visual Effects</p>
+    </div>
+</header>
+
+<main>
+    <article class="blog-post">
+        <section class="post-meta">
+            <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Game Development</span>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>In this learning journal, I document my journey of transforming a basic Blackjack game into an immersive casino-like experience using modern web technologies.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features Added</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🎨 Dynamic Backgrounds</h3>
+                    <p>Multi-layered background system with responsive scaling and positioning.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎉 Confetti Effects</h3>
+                    <p>Celebratory particle animations using tsParticles library.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎵 Audio Integration</h3>
+                    <p>Casino ambience and effect sounds for enhanced immersion.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Responsive Design</h3>
+                    <p>Container queries and flexible layouts for all devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <h2>Implementation Highlights</h2>
+            <div class="code-block">
+                <h3>Confetti Animation Setup</h3>
+                <pre><code class="language-javascript">
+const duration = 5 * 1000;
+const defaults = {
+    startVelocity: 30,
+    spread: 360,
+    ticks: 60
+};
+
+// Particle animation logic
+function createConfetti() {
+    const particleCount = 50;
+    confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: 0.2, y: 0.8 }
+    });
+}
+                    </code></pre>
+            </div>
+        </section>
+
+        <section class="lessons">
+            <h2>Lessons Learned</h2>
+            <ul class="lessons-list">
+                <li>Working with Web Audio API for game sound effects</li>
+                <li>Implementing particle systems for visual feedback</li>
+                <li>Using container queries for modern responsive design</li>
+                <li>Performance optimization for animations</li>
+            </ul>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <p>Created with 💖 and lots of learning</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+</body>
+</html>

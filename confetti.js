@@ -8,7 +8,7 @@ export default function startConfetti() {
         return Math.random() * (max - min) + min;
     }
     const fireworkSound = new Audio("casino.mp3");
-    fireworkSound.volume = 0.4;
+    fireworkSound.volume = 0.8;
     fireworkSound.play();
 
     const interval = setInterval(function() {
