@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+body {
+    height: 100vh;
+    color: whitesmoke;
+    background-image: url("bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-image: url("bgc1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80vw;
+    width: 100%;
+    max-height: 80vh;
+  height: 100%;
+    container-type: size;
+
+}
+h1 {
+    font-size: 5rem;
+    color: goldenrod;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 2rem;
+}
+button {
+    background-color: goldenrod;
+    padding: .67em 2em;
+    width: fit-content;
+    align-self: center;
+    font-weight: bold;
+    color: #100700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 1em;
+}
+button:hover {
+    background-color: #1e1f1f;
+    color: goldenrod;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.6);
+}
+
+@container (max-width: 550px) {
+    h1 {
+        font-size: calc(2rem + 4vw);
+    }
+    h2 {
+        font-size: calc(1.5rem + 1vw);
+    }
+}
