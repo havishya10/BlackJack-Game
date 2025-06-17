@@ -33,7 +33,7 @@ body {
     width: 100%;
     max-height: 80vh;
   height: 100%;
-    container-type: size;
+    container-type: inline-size;
 
 }
 h1 {
