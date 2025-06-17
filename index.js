@@ -54,6 +54,7 @@ function drawCard() {
     console.log("Drawing Card")
     const cardSound = new Audio("card1.mp3");
     cardSound.volume = 0.5;
+    cardSound.playbackRate = 1.8;
     cardSound.play();
     card = Object.keys(suit)[Math.floor(Math.random() * Object.keys(suit).length)]
     const cardRank = suit[card];
