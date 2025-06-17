@@ -44,6 +44,14 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+.btn-container {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+
+}
 button {
     background-color: goldenrod;
     padding: .67em 2em;
@@ -56,12 +64,28 @@ button {
     cursor: pointer;
     font-size: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 1em;
+
+
 }
 button:hover {
     background-color: #1e1f1f;
     color: goldenrod;
     box-shadow: 0 0 15px rgba(218, 165, 32, 0.6);
+}
+#draw-card-btn , #surrender-btn {
+    display: none;
+}
+#draw-card-btn:hover {
+    background-color: darkgreen;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+}
+#surrender-btn:hover {
+    background-color: darkred;
+    color: goldenrod;
+    box-shadow: 0 0 15px rgba(220, 20, 60, 0.4);
+}
+a {
+    color: darkgoldenrod;
 }
 
 @container (max-width: 550px) {
