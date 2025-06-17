@@ -45,6 +45,10 @@ function start() {
         hasBlackJack = true;
         reset()
     } else {
+        const gameEndSound = new Audio("gend.mp3");
+        gameEndSound.volume = 0.8;
+        gameEndSound.play();
+        msgEl.textContent = ("Bust!");
         gameEnd();
 
     }
@@ -72,10 +76,8 @@ function reset() {
     startBtnEl.addEventListener("click", () =>  location.reload());
 }
 function gameEnd() {
-    const gameEndSound = new Audio("gend.mp3");
-    gameEndSound.volume = 0.8;
-    gameEndSound.play();
-    msgEl.textContent = ("Bust!");
+
+
     msgEl.style.color = "red";
     try {
         document.getElementById("sum").style.color = "red";
@@ -86,6 +88,11 @@ function gameEnd() {
 }
 drawBtnEl.addEventListener("click", drawCard);
 surrenderBtnEl.addEventListener("click", () => {
+    const surrenderSound = new Audio("surrender.mp3");
+    surrenderSound.volume = 0.5;
+    surrenderSound.playbackRate = 1.8;
+    surrenderSound.play();
+    msgEl.textContent = ("surrendered!");
     gameEnd();
 
     }
