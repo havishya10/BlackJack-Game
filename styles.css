@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     color: whitesmoke;
-    background-image: url("bg3.jpg");
+    background-image: url("bg6.jpg");
     background-size: cover;
     background-position: center;
     padding: 2em;
@@ -23,9 +23,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    background-image: url("bgc1.jpg");
+    background-image: url("bg1.jpg");
     background-size: cover;
     background-position: center;
+    
     padding: 3em 2em;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -33,7 +34,6 @@ body {
     width: 100%;
     max-height: 80vh;
      height: 100%;
-
     container-type: inline-size;
 
 }
