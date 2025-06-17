@@ -15,7 +15,7 @@ const suit = {
     "J": 10,
     "Q": 10,
     "K": 10,
-    "A": 21
+    "A": 1
 };
 let sum = 0;
 let hasBlackJack = false;
